@@ -1,102 +1,44 @@
+
 # Testing in Python: Unit Tests
+This repo contains my submission of 	QA Unit testing Assignment 
 
 
-This repo conatins an exmaple how to write a unit tests in python. In this repo, I show how to run the unit tests, I also go through a process of achieving 100% test coverage by demonstrating:
-- **unittest** 
-- **pytest**
-- **coverage.py**
-- **pytest-cov**
-<br/>
-With all these things I achieve 100% Test Coverage in Python.
+# Flow graph analysis (CFG)
+All graphs generated Using [Understand](https://www.scitools.com/free-trial) Apllication
+- **Add** 
+		
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/FVmFMT9/Control-Flow-add.png" alt="Control-Flow-add" border="0" /></a>
+- **Multiply**
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/XyyLHDn/Control-Flow-multiply.png" alt="Control-Flow-multiply" border="0" /></a>
+- **Subtract**
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/W2wy6vJ/Control-Flow-subtract.png" alt="Control-Flow-subtract" border="0" /></a>
 
-# Unit test in python slides in the below link 
+- **Divide**
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/P1d2qcR/Control-Flow-divide.png" alt="Control-Flow-divide" border="0" /></a>
+- **isExit** 
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/k1Lxzxw/Control-Flow-is-Exit.png" alt="Control-Flow-is-Exit" border="0" /></a>
+- **Calculate**
+<a href="https://ibb.co/k9jNSJB"><img src="https://i.ibb.co/Brb0CG3/Control-Flow-calculate.png" alt="Control-Flow-calculate" border="0" /></a>
+- **CheckUserInput**
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/gz3JYNT/Control-Flow-check-user-input.png" alt="Control-Flow-check-user-input" border="0" /></a>
+# list of independent paths and testCases
+- **[Add](https://docs.google.com/spreadsheets/d/1qK204dzzS8WpMmXo_3IQCbdIOV5_lpveCX8ODq8DhAM/edit?usp=sharing)** 
 
-- https://bit.ly/3uOmny9
+- **[Multiply](https://docs.google.com/spreadsheets/d/1qK204dzzS8WpMmXo_3IQCbdIOV5_lpveCX8ODq8DhAM/edit#gid=1281681338)**
 
-# Setup
-- Create a dirctory for the app: ie  
-```console
-mkdir project 
-```
-- Clone the project: 
-```console
-git clone git@github.com:mkassaf/UnitTestInPython.git 
-```
-- Go to the app:  
-```console 
-cd UnitTestInPython 
-```
-- Creating virtual environments:  
-```console
-python3 -m venv vnev
-```
-- Activate virtual environment: 
-```console
-source vnev/bin/activate 
-```
-- install the dependanceies:  
-```console
-pip3 install -r requirements.txt 
-```
-
-# Steps 
-
-## Run test using pytest
-
-```console
-pytest test_calculatorApp.py 
-```
-
-## Result summary report in python nosetests
-
-- You can run tests for your project using this **nosetests** : 
-```console
-    nosetests 
-```
-- For help with nosetests’ many command-line options, try : 
-```console
-    nosetests -h 
-```
-- For example, 
-```console 
-nosetests --with-xunit 
-``` 
-generates a xml file conatin the test cases run report.
-## Code coverage
-- To analyses file, Run: 
-```console  
-    coverage run calculatorApp.py 
-```
-- To generate outputs anaylsys and shows covered lines, Run:  
-```console  
-    coverage report -m 
-```
-- To create a more concise html version of the report, Run:  
- ```console 
-    coverage html 
- ```
-
-## Run the test and generate code coverage
-- Run the following command to run the tests and print the code coverage:
-    - 
-    ```console 
-    pytest --cov=calculatorApp 
-    ```
-- Run the following command to run the tests and generate html report for the code coverage: 
-    - 
-    ```console 
-    pytest --cov=calculatorApp --cov-report=html 
-    ```
+- **[Subtract](https://docs.google.com/spreadsheets/d/1qK204dzzS8WpMmXo_3IQCbdIOV5_lpveCX8ODq8DhAM/edit#gid=1992241515)**
 
 
-# Refernces 
-- https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises
-- https://coverage.readthedocs.io/en/6.3.2/
-- https://realpython.com/python-testing/
-- https://docs.python.org/3/library/venv.html
-- https://www.datacamp.com/community/tutorials/unit-testing-python
-- https://docs.python.org/3/library/unittest.html
-- https://geekflare.com/unit-testing-with-python-unittest/
-- https://www.youtube.com/watch?v=7BJ_BKeeJyM&ab_channel=SBCODE
-- https://docs.python.org/3/library/unittest.mock.html#unittest.mock.patch
-- https://realpython.com/python-mock-library/#patch
+- **[Divide](https://docs.google.com/spreadsheets/d/1qK204dzzS8WpMmXo_3IQCbdIOV5_lpveCX8ODq8DhAM/edit#gid=2130173557)**
+
+- **[isExit](https://docs.google.com/spreadsheets/d/1qK204dzzS8WpMmXo_3IQCbdIOV5_lpveCX8ODq8DhAM/edit#gid=260148380)** 
+
+- **[Calculate](https://docs.google.com/spreadsheets/d/1qK204dzzS8WpMmXo_3IQCbdIOV5_lpveCX8ODq8DhAM/edit#gid=2062095419)**
+
+- **[CheckUserInput](https://docs.google.com/spreadsheets/d/1qK204dzzS8WpMmXo_3IQCbdIOV5_lpveCX8ODq8DhAM/edit#gid=1554649571)**
+
+# issue with 100% Code Coverage
+we cannot achieve 100% code coverage because there's a line in the code the only path can access it is an invisible path so there's no test case can reach this section of code 
+
+# [TestCases run report](https://github.com/mohamadhase/mohamadhase/blob/main/nosetests.xml)
+# [code coverage report](https://github.com/mohamadhase/mohamadhase/tree/main/htmlcov)
