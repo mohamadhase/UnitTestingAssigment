@@ -51,7 +51,7 @@ def calculate(choice, num1, num2 ):
     if not num1 or not num2:
         print("inputs can not be null")
         raise ValueError("inputs can not be null")  
-    num1 = check_user_input(num1)
+    num1 = check_user_input(num1) 
     num2 = check_user_input(num2)
     result = ""
     if choice in ('1', '2', '3', '4'):
