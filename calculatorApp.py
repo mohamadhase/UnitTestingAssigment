@@ -47,6 +47,7 @@ def divide(x, y):
 
 def calculate(choice, num1, num2 ):
     # check if choice is one of the four options
+    print(num1,num2)
     if not num1 or not num2:
         print("inputs can not be null")
         raise ValueError("inputs can not be null")  
