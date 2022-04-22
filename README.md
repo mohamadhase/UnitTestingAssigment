@@ -37,8 +37,6 @@ All graphs generated Using [Understand](https://www.scitools.com/free-trial) Apl
 
 - **[CheckUserInput](https://docs.google.com/spreadsheets/d/1qK204dzzS8WpMmXo_3IQCbdIOV5_lpveCX8ODq8DhAM/edit#gid=1554649571)**
 
-# issue with 100% Code Coverage
-we cannot achieve 100% code coverage because there's a line in the code the only path can access it is an invisible path so there's no test case can reach this section of code 
 
 # [TestCases run report](https://github.com/mohamadhase/mohamadhase/blob/main/nosetests.xml)
 # [code coverage report](https://github.com/mohamadhase/mohamadhase/tree/main/htmlcov)
