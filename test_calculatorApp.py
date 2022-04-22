@@ -41,7 +41,7 @@ class TestCalculate(unittest.TestCase):
 
 
     def test_CalculateTestCase7(self):
-        self.assertRaises(ZeroDivisionError, calculate, 4,12,0) 
+        self.assertRaises(ZeroDivisionError, calculate, '4',12,'0') 
 
 
     #add 
@@ -83,11 +83,6 @@ class TestCalculate(unittest.TestCase):
     def test_isExitTestCase3(self):
         self.assertRaises(ValueError, isExit,'w')    
 
-
-    def tearDown(self):
-        print("tearDown .. ")
-
-
     #multiply 
     def test_multiplyTestCase1(self):
 
@@ -97,5 +92,10 @@ class TestCalculate(unittest.TestCase):
     #subtract 
     def test_subtractTestCase1(self):
         self.assertEqual(subtract(10,10), 0)
+    def tearDown(self):
+        print("tearDown .. ")
+
+
+
 if __name__ == '__main__':
 	unittest.main()
